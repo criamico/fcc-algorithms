@@ -155,13 +155,12 @@ describe('Function 15 (getIndexToIns)', function(){
 });
 
 
-
 describe('Function 16 (Decode ROT13)', function(){
 
     it('should be able to decode uppercase text encoded in ROT13', function(){
         expect(rot13("SERR PBQR PNZC")).toBe("FREE CODE CAMP");
         expect(rot13("SERR CVMMN!")).toBe("FREE PIZZA!");
-        expect(rot13("SERR CVMMN!")).toBe("FREE LOVE?");
+        expect(rot13("SERR YBIR?")).toBe("FREE LOVE?");
         expect(rot13("GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.")).toBe("THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX.");
     });
 
